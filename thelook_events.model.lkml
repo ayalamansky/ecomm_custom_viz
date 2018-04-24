@@ -1,11 +1,11 @@
 connection: "thelook_events"
-label: "1) eCommerce with Event Data"
+label: "eCommerce Custom Viz"
 include: "*.view" # include all the views
 include: "*.dashboard" # include all the dashboards
 
 
 explore: order_items {
-  label: "(1) Orders, Items and Users"
+  label: "eCommerce Custom Viz"
   view_name: order_items
   join: inventory_items {
     #Left Join only brings in items that have been sold as order_item
@@ -14,9 +14,21 @@ explore: order_items {
     sql_on: ${inventory_items.id} = ${order_items.inventory_item_id} ;;
   }
 
+  join: order_facts {
+    view_label: "Orders"
+    relationship: many_to_one
+    sql_on: ${order_facts.order_id} = ${order_items.order_id} ;;
+  }
+
   join: users {
     relationship: many_to_one
     sql_on: ${order_items.user_id} = ${users.id} ;;
+  }
+
+  join: user_order_facts {
+    view_label: "Users"
+    relationship: many_to_one
+    sql_on: ${user_order_facts.user_id} = ${order_items.user_id} ;;
   }
 
   join: products {

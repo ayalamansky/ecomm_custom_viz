@@ -265,6 +265,19 @@ view: order_items {
     drill_fields: [detail*]
   }
 
+  measure: first_purchase_count {
+      view_label: "Orders"
+      type: count_distinct
+      sql: ${order_id} ;;
+
+      filters: {
+        field: order_facts.is_first_purchase
+        value: "Yes"
+      }
+      # customized drill path for first_purchase_count
+      drill_fields: [user_id, order_id, created_date, users.traffic_source]
+  }
+
 ########## Return Information ##########
 
   dimension: is_returned {
