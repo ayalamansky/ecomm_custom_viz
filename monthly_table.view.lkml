@@ -88,7 +88,7 @@ view: monthly_table {
                     {{ this_month_order_count_dresses._value }}
                   </td>
                   <td style="border-right:3px solid white;text-align:center" align="center">
-                    {{ this_month_user_count_pants._value }}
+                    {{ this_month_user_count_dresses._value }}
                   </td>
                 </tr>
 
@@ -103,7 +103,7 @@ view: monthly_table {
                     {{ this_month_order_count_sweaters._value }}
                   </td>
                   <td style="border-right:3px solid white;text-align:center" align="center">
-                    {{ this_month_user_count_pants._value }}
+                    {{ this_month_user_count_sweaters._value }}
                   </td>
                 </tr>
 
