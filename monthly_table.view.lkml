@@ -96,7 +96,7 @@ view: monthly_table {
                   <td style="border-right:3px solid white;" align="center">
                     <table style="width:100%;"><tr>
                         <td style="width:40%;text-align:right"><img src="https://i.pinimg.com/564x/4f/4f/e6/4f4fe6e6626e7b5b5014c6abffd3c0bc.jpg" height=50></td>
-                        <td style="width:60%;text-align:left;padding-left:10px">&emsp;Schools</td>
+                        <td style="width:60%;text-align:left;padding-left:10px">&emsp;Sweaters</td>
                     </tr></table
                   </td>
                   <td style="border-right:3px solid white;text-align:center" align="center">
