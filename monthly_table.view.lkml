@@ -81,7 +81,7 @@ view: monthly_table {
                   <td style="border-right:3px solid white;" align="center">
                     <table style="width:100%;"><tr>
                         <td style="width:40%;text-align:right"><img src="http://www.clker.com/cliparts/2/L/n/o/1/C/pink-dress-hi.png" height=50></td>
-                        <td style="width:60%;text-align:left;padding-left:10px">&emsp;Teachers</td>
+                        <td style="width:60%;text-align:left;padding-left:10px">&emsp;Dresses</td>
                     </tr></table>
                   </td>
                   <td style="border-right:3px solid white;text-align:center" align="center">

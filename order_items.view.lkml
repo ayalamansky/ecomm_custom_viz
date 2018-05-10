@@ -334,24 +334,6 @@ view: order_items {
                 ;;
   }
 
-  dimension: footer {
-    group_label: "Custom Formatting"
-    type: string
-    sql: ${id} ;;
-    html: <div style="font-family:'CentraleSansRnd', 'museo-sans-rounded';background-color:#ffffff;color:#4d4d4f; font-size:10pt;font-weight:300;padding:50px;">
-          <table width=100%;><tr>
-            <td style="text-align:left;">
-              <span style='font-weight:bold'>This is a footer</span><br />
-              containing any info/formatting I want<p /><p />
-            </td>
-            <td style="width:200px;text-align:right;">
-              Page #
-            </td>
-          </tr></table>
-      </div>
-      ;;
-  }
-
   measure: order_count_image {
     group_label: "Custom Formatting"
     type: number
@@ -392,6 +374,25 @@ view: order_items {
     html: <div style="font-family:'CentraleSansRnd', 'museo-sans-rounded';text-align:left;width:300px"><span style="color: #4d4d4f; font-size:12pt;font-weight:400;padding-left:5px;padding-right:200px;">{{ rendered_value }}</span></div>
       ;;
   }
+
+
+    dimension: footer {
+      group_label: "Custom Formatting"
+      type: string
+      sql: ${id} ;;
+      html: <div style="font-family:'CentraleSansRnd', 'museo-sans-rounded';background-color:#ffffff;color:#4d4d4f; font-size:10pt;font-weight:300;padding:50px;">
+          <table width=100%;><tr>
+            <td style="text-align:left;">
+              <span style='font-weight:bold'>This is a footer</span><br />
+              containing any info/formatting I want<p /><p />
+            </td>
+            <td style="width:200px;text-align:right;">
+              Page #
+            </td>
+          </tr></table>
+      </div>
+      ;;
+    }
 
 ########## Sets ##########
 
