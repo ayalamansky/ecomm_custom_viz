@@ -326,10 +326,22 @@ view: order_items {
 
     dimension: ui_label_2 {
       group_label: "Custom Formatting"
+      description: "Use for Be The Match SERVICE Dashboard"
       sql: ${id} ;;
       html: <div style="padding-left:25px;padding-right:25px;">
                 <div style="font-family:'CentraleSansRnd', 'museo-sans-rounded';background-color:##0079c1;color:#ffffff; font-size:16pt;font-weight:bold;vertical-align:middle;padding:5px,20px;height:75px;line-height:75px;text-align:left;">
                       <span style="width:200px;font-weight:400;font-weight:bold;">Prompt Time to Transplant for U.S. Patients</span>
+                </div></div>
+                ;;
+    }
+
+    dimension: ui_label_3 {
+      group_label: "Custom Formatting"
+      description: "Use for Be The Match THRIVE Dashboard"
+      sql: ${id} ;;
+      html: <div style="padding-left:25px;padding-right:25px;">
+                <div style="font-family:'CentraleSansRnd', 'museo-sans-rounded';background-color:##0079c1;color:#ffffff; font-size:16pt;font-weight:bold;vertical-align:middle;padding:5px,20px;height:75px;line-height:75px;text-align:left;">
+                      <span style="width:200px;font-weight:400;font-weight:bold;">Optimal Transplants for U.S. Patients</span>
                 </div></div>
                 ;;
     }
